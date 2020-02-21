@@ -2,15 +2,21 @@
 // sehingga function ini bisa mereturn boolean jika "price-nya" valid.
 
 function hasValidPrice(product){
-	if (product == null){
+	if (!product){ //cara 2: (!product)
 		return false;
-	} else if (product.price <= 0){
-		return false;
+	} else if (product.price >= 0 && typeof product.price === 'number'){
+		return true; //cara 2 console.log(true)
 	} else {
-		return true;
+		return false;
 	}
+	//cara 2 bisa manggil dengan console.log(product)
 }
-	
+
+
+
+
+
+	//udah di kerjain
 
 console.log(hasValidPrice({ "product": "Milk", price: 1.50 })) // true
 console.log(hasValidPrice({ "product": "Cheese", price: -1 })) // false
