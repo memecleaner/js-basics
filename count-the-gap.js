@@ -37,6 +37,9 @@
 
 // console.log(numberToBinary)// output: 1001
 
+
+
+// Write a function that could receive a number as parameter.The function should convert the parameter to binary number.Then, find the highest gap(zeros that between number 1) in one binary number.Return the highest gap of the binary number.
 function countTheGap(num){
 
 }
