@@ -1,4 +1,13 @@
 // buat sebuah function yang me-return angka paling kecil dari sebuah array of numbers;
+function findSmallestNum(arr){
+    var palingKecil = arr[0];
+    for (var i=0; i<arr.length; i++){
+        if(arr[i]< palingKecil){
+            palingKecil = arr[i]
+        }
+    }
+    console.log(palingKecil);
+}
 
 
 
